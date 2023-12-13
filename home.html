@@ -10,17 +10,29 @@
     <title>Estratego tu tienda de Juegos</title>
 </head>
 <body>
-    <header>
-        <h1>Estratego</h1>
-        <nav>
+    <header class="container">
+        <div id="logoEstratego">
+            <img src="./img/logoEstratego.png" alt="logoEstratego" class="img-fluid">
+        </div>
+        <nav id="navegador">
             <ul>
-                <li><a href="#">Inicio</a></li>
                 <li><a href="#">Juegos</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Accesorios</a></li>
+                <li><a href="#">Outlet</a></li>
+                <li class="search-bar">
+                    <form action="#" method="GET">
+                        <input type="text" name="search" placeholder="Buscar">
+                        <button type="submit">Buscar</button>
+                    </form>
+                </li>
+                <li class="icos"><a href="#"><img class="ico" src="./img/robot.png" alt="Icono Robot"></a></li>
+                <li class="icos"><a href="#"><img class="ico" src="./img/carritoo.png" alt="Icono Carrito"></a></li>
             </ul>
         </nav>
-    </header>
-
+    </header>    
+    <div class="mensage-envio">
+        <h1>Devoluciones ampliadas hasta el 30 de enero - Envíos gratis desde 35 € a pto. de recogida o desde 50 € a domicilio.</h1>
+    </div>
     <section class="featured-games">
         <article class="game">
             <img src="juego1.jpg" alt="Juego 1">
