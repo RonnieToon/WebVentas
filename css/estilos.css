@@ -5,27 +5,111 @@ body {
 }
 
 header {
-    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
     color: #fff;
-    text-align: center;
-    padding: 1em 0;
+    padding: 1em 20px;
+}
+
+#logoEstratego {
+    transform: translate(-200px, 0px);
+}
+
+#logoEstratego img {
+    transition: transform 0.3s ease-in-out;
+}
+
+#logoEstratego img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* Agregado para la barra de búsqueda */
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar form {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+.search-bar button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.search-bar button img {
+    width: 20px;
+    height: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: #fafafa;
+    margin-left: 20px;
+    height: 100%; /* Añadido */
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    height: 100%; /* Añadido */
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    align-items: center; /* Añadido */
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 nav a {
+    margin:10px;
     text-decoration: none;
-    color: #fff;
+    color: #666485;
     font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: center; /* Añadido */
+}
+
+nav a:hover {
+    color: rgb(133, 26, 133);
+}
+
+.ico {
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.ico:hover {
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    transform: scale(1.1);
 }
 
 section {
@@ -44,6 +128,55 @@ section {
     max-width: 100%;
     height: auto;
 }
+
+.mensage-envio{
+    font-size: 8px;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    color:#fff;
+}
+
+.featured-games {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.game {
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.game img {
+    max-width: 100%;
+    height: auto;
+}
+
+.price {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilos para los modales */
+.modal-body img {
+    max-width: 100%;
+    height: auto;
+}
+
+.modal-footer button {
+    width: 100%;
+}
+
+/* Personalizar el ancho del modal según tus necesidades */
+.modal-dialog {
+    max-width: 600px;
+}
+
 
 footer {
     background-color: #333;
