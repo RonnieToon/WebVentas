@@ -16,9 +16,9 @@
         </div>
         <nav id="navegador">
             <ul>
-                <li><a href="#">Juegos</a></li>
-                <li><a href="#">Accesorios</a></li>
-                <li><a href="#">Outlet</a></li>
+                <li><a href="#">JUEGOS</a></li>
+                <li><a href="#">ACCESORIOS</a></li>
+                <li><a href="#">OUTLET</a></li>
                 <li class="search-bar">
                     <form action="#" method="GET">
                         <input type="text" name="search" placeholder="Buscar">
@@ -34,23 +34,41 @@
         <h1>Devoluciones ampliadas hasta el 30 de enero - Envíos gratis desde 35 € a pto. de recogida o desde 50 € a domicilio.</h1>
     </div>
     <section class="featured-games">
-        <article class="game">
-            <img src="juego1.jpg" alt="Juego 1">
-            <h2>Juego 1</h2>
-            <p>Descripción del juego 1.</p>
-            <p class="price">$49.99</p>
-            <button>Añadir al carrito</button>
-        </article>
-
-        <article class="game">
-            <img src="juego2.jpg" alt="Juego 2">
-            <h2>Juego 2</h2>
-            <p>Descripción del juego 2.</p>
-            <p class="price">$39.99</p>
-            <button>Añadir al carrito</button>
-        </article>
-        <!-- Agrega más juegos según sea necesario -->
-    </section>
+        <div id="gameCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <!-- Juego 1 -->
+                    <article class="game" data-toggle="modal" data-target="#gameModal1">
+                        <img src="./img/1.jpg" alt="Juego 1">
+                        <h2>Juego 1</h2>
+                        <p>Descripción del juego 1.</p>
+                        <p class="price">$49.99</p>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#gameModal1">Ver Detalles</button>
+                    </article>
+                </div>
+                <div class="carousel-item">
+                    <!-- Juego 2 -->
+                    <article class="game" data-toggle="modal" data-target="#gameModal2">
+                        <img src="./img/1.jpg" alt="Juego 2">
+                        <h2>Juego 2</h2>
+                        <p>Descripción del juego 2.</p>
+                        <p class="price">$39.99</p>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#gameModal2">Ver Detalles</button>
+                    </article>
+                </div>
+                <!-- Agrega más juegos según sea necesario -->
+            </div>
+        
+            <!-- Controles de Carrusel -->
+            <a class="carousel-control-prev" href="#gameCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#gameCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
 
     <footer>
         <p>&copy; 2023 Tu Tienda de Juegos de Mesa</p>

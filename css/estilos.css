@@ -22,6 +22,7 @@ header {
 }
 
 #logoEstratego img:hover {
+    cursor: pointer;
     transform: scale(1.1);
 }
 
@@ -98,6 +99,7 @@ nav a:hover {
 }
 
 .ico {
+    margin-left: 10px;
     width: 30px;
     height: 30px;
     transition: transform 0.3s ease-in-out;
@@ -134,6 +136,47 @@ section {
     background-color: #333;
     color:#fff;
 }
+
+.featured-games {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.game {
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.game img {
+    max-width: 100%;
+    height: auto;
+}
+
+.price {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilos para los modales */
+.modal-body img {
+    max-width: 100%;
+    height: auto;
+}
+
+.modal-footer button {
+    width: 100%;
+}
+
+/* Personalizar el ancho del modal según tus necesidades */
+.modal-dialog {
+    max-width: 600px;
+}
+
 
 footer {
     background-color: #333;
