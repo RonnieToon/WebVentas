@@ -14,7 +14,7 @@ header {
 }
 
 #logoEstratego {
-    transform: translate(-200px, 0px);
+    transform: translate(0px, 0px);
 }
 
 #logoEstratego img {
@@ -61,7 +61,7 @@ header {
 nav {
     display: flex;
     align-items: center;
-    background-color: #fafafa;
+    background-color: #ffffff;
     margin-left: 20px;
     height: 100%; /* Añadido */
 }
@@ -197,6 +197,11 @@ section {
 }
 .btn-modal {
     margin-top: 10px;
+}
+
+.search-bar button:hover {
+    background-color: #dbbf1e;
+    color: rgb(0, 0, 0);
 }
 
 footer {
