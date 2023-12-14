@@ -1,6 +1,6 @@
 MOCKUP:
 pagina principal -->
-    <img src="./img/mockuphome.png>
-    <img src="./img/mockupaccesorios.png>
-    <img src="./img/mockupoutlet.png>
-    <img src="./img/mockupcompra.png>
+    <image src="./img/mockuphome.png>
+    <image src="./img/mockupaccesorios.png>
+    <image src="./img/mockupoutlet.png>
+    <image src="./img/mockupcompra.png>
