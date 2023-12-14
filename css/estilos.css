@@ -15,7 +15,7 @@ header {
 
 #logoEstratego {
     transform: translate(0px, 0px);
-    transform: translate(-200px, 0px);
+    
 }
 
 #logoEstratego img {
@@ -27,7 +27,6 @@ header {
     transform: scale(1.1);
 }
 
-/* Agregado para la barra de búsqueda */
 .search-bar {
     display: flex;
     align-items: center;
@@ -64,15 +63,15 @@ nav {
     display: flex;
     align-items: center;
     background-color: #ffffff;
-    background-color: #fafafa;
+    background-color: #ffffff;
     margin-left: 20px;
-    height: 100%; /* Añadido */
+    height: 100%; 
 }
 
 .search-bar {
     display: flex;
     align-items: center;
-    height: 100%; /* Añadido */
+    height: 100%; 
 }
 
 nav ul {
@@ -80,7 +79,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    align-items: center; /* Añadido */
+    align-items: center; 
 }
 
 nav ul li {
@@ -95,7 +94,7 @@ nav a {
     font-weight: bold;
     font-size: 20px;
     display: flex;
-    align-items: center; /* Añadido */
+    align-items: center; 
 }
 
 nav a:hover {
@@ -174,7 +173,6 @@ section {
     color: #333;
 }
 
-/* Estilos para los modales */
 .modal-body img {
     max-width: 100%;
     height: auto;
