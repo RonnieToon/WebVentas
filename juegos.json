@@ -1,0 +1,65 @@
+{
+    "juegosDeMesa": [
+      {
+        "img": "./img/ruta_imagen_1.jpg",
+        "titulo": "Catan",
+        "descripcion": "Un juego de mesa clásico donde los jugadores compiten para colonizar una isla, negociar recursos y construir ciudades.",
+        "precio": "$39.99"
+      },
+      {
+        "img": "./img/ruta_imagen_2.jpg",
+        "titulo": "Ticket to Ride",
+        "descripcion": "Embárcate en una aventura ferroviaria en este juego de mesa estratégico donde los jugadores compiten para completar rutas de tren por todo el mundo.",
+        "precio": "$49.99"
+      },
+      {
+        "img": "./img/ruta_imagen_3.jpg",
+        "titulo": "Pandemic",
+        "descripcion": "Un juego cooperativo en el que los jugadores trabajan juntos para prevenir brotes de enfermedades y salvar al mundo.",
+        "precio": "$29.99"
+      },
+      {
+        "img": "./img/ruta_imagen_4.jpg",
+        "titulo": "Carcassonne",
+        "descripcion": "Crea un paisaje medieval colocando losetas y compite por puntos construyendo ciudades, caminos y campos.",
+        "precio": "$59.99"
+      },
+      {
+        "img": "./img/ruta_imagen_5.jpg",
+        "titulo": "Dominion",
+        "descripcion": "Un juego de construcción de mazos donde los jugadores compiten por la creación del reino más próspero.",
+        "precio": "$44.99"
+      },
+      {
+        "img": "./img/ruta_imagen_6.jpg",
+        "titulo": "7 Wonders",
+        "descripcion": "Construye una civilización a lo largo de tres eras, toma decisiones estratégicas y compite con tus vecinos para ser la maravilla más grande del mundo.",
+        "precio": "$34.99"
+      },
+      {
+        "img": "./img/ruta_imagen_7.jpg",
+        "titulo": "Codenames",
+        "descripcion": "Un juego de palabras y espionaje donde los jugadores tratan de identificar a sus agentes secretos mientras evitan a los agentes enemigos.",
+        "precio": "$54.99"
+      },
+      {
+        "img": "./img/ruta_imagen_8.jpg",
+        "titulo": "Puerto Rico",
+        "descripcion": "Un juego de estrategia económica donde los jugadores desarrollan plantaciones, construyen edificios y envían bienes a Europa para obtener puntos.",
+        "precio": "$47.99"
+      },
+      {
+        "img": "./img/ruta_imagen_9.jpg",
+        "titulo": "Azul",
+        "descripcion": "Diseña impresionantes patrones de azulejos en este juego de colocación de piezas mientras compites por la mejor creación.",
+        "precio": "$37.99"
+      },
+      {
+        "img": "./img/ruta_imagen_10.jpg",
+        "titulo": "Splendor",
+        "descripcion": "Conviértete en un mercader y colecciona gemas para comprar minas, transportes y tiendas en este juego de mesa estratégico.",
+        "precio": "$42.99"
+      }
+    ]
+  }
+  
