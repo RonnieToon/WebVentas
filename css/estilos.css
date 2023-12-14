@@ -15,6 +15,7 @@ header {
 
 #logoEstratego {
     transform: translate(0px, 0px);
+    transform: translate(-200px, 0px);
 }
 
 #logoEstratego img {
@@ -46,6 +47,7 @@ header {
 
 .search-bar button {
     background-color: #a38d0e;
+    background-color: #4CAF50;
     color: white;
     border: none;
     padding: 6px 12px;
@@ -62,6 +64,7 @@ nav {
     display: flex;
     align-items: center;
     background-color: #ffffff;
+    background-color: #fafafa;
     margin-left: 20px;
     height: 100%; /* Añadido */
 }
@@ -82,7 +85,7 @@ nav ul {
 
 nav ul li {
     margin-right: 40px;
-
+    margin-right: 10px;
 }
 
 nav a {
@@ -103,6 +106,12 @@ nav a:hover {
     margin-left: 10px;
     width: 40px;
     height: 40px;
+    color: rgb(133, 26, 133);
+}
+
+.ico {
+    width: 30px;
+    height: 30px;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -110,6 +119,8 @@ nav a:hover {
     margin-left: 10px;
     width: 40px;
     height: 40px;
+    width: 30px;
+    height: 30px;
     transform: scale(1.1);
 }
 
