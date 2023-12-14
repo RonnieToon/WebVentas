@@ -10,4 +10,4 @@
 ![Imagen de la página principal](./img/mockupoutlet.png)
 
 **Compras de Juegos:**
-![Imagen de la página de accesorios](./img/mockupacompra.png)
+![Imagen de la página de accesorios](./img/mockupcompra.png)
