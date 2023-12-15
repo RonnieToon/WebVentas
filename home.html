@@ -5,12 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./bootstrap-5.3.2-dist/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="./css/estilos.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="./bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-Z2Rl2Bt1a4mZBqY4BrC8Zn/jwM5fCd4/nd/vaiXaZ2I4nH7dMhqD2EqF5OsZ/C80" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy4j7N1RSJoqyI" crossorigin="anonymous"></script>
-
+    <script src="./jQuery/jquery-3.7.1.min.js"></script>
     <script src="./js/cliente.js"></script>
     <title>Estratego tu tienda de Juegos</title>
 </head>
@@ -21,9 +17,24 @@
         </div>
         <nav id="navegador">
             <ul>
-                <li><a href="#">JUEGOS</a></li>
-                <li><a href="#">ACCESORIOS</a></li>
-                <li><a href="#">OUTLET</a></li>
+                <li id="juegosLink"><a href="#">JUEGOS</a>
+                    <div id="categoriaDesplegable">
+                        <a href="#" class="categoria-option" data-categoria="niños">Juegos de Carta</a>
+                        <a href="#" class="categoria-option" data-categoria="adultos">Juegos de Mesa</a>
+                        <a href="#" class="categoria-option" data-categoria="todos">Juegos de Rol</a>
+                    </div>
+                </li>
+                <li id="accesoriosLink"><a href="#">ACCESORIOS</a></li>
+                <div id="categoriaDesplegable2">
+                    <a href="#" class="categoria-option" data-categoria="tapetes">Tapetes</a>
+                    <a href="#" class="categoria-option" data-categoria="fundas">Fundas</a>
+                    <a href="#" class="categoria-option" data-categoria="posters">Posters</a>
+                </div>
+                <li id="outletLink"><a href="#">OUTLET</a></li>
+                <div id="categoriaDesplegable3">
+                    <a href="#" class="categoria-option" data-categoria="descuentos">Descuentos</a>
+                    <a href="#" class="categoria-option" data-categoria="ultimasexistencias">Existencias</a>
+                </div>
                 <li class="search-bar">
                     <form action="#" method="GET">
                         <input type="text" name="search" placeholder="Buscar">
@@ -31,53 +42,38 @@
                     </form>
                 </li>
                 <li class="icos"><a href="#"><img class="ico" src="./img/robot.png" alt="Icono Robot"></a></li>
-                <li class="icos"><a href="#"><img class="ico" src="./img/carritoo.png" alt="Icono Carrito"></a></li>
+                <li class="icos"><a href="#"><img class="ico" id="ver-carrito" src="./img/carritoo.png" alt="Icono Carrito"></a></li>
             </ul>
         </nav>
-    </header>    
+    </header>   
     <div class="mensage-envio">
         <h1>Devoluciones ampliadas hasta el 30 de enero - Envíos gratis desde 50 € a domicilio.</h1>
     </div>
+    <div class="listillo">
+        <img src="./img/image.png" alt=" listillo juego">
+    </div>
+    <div class="ninots">
+        <div class="ninot1">
+            <img src="./img/ninot1.png" alt="Lo mas nuevo">
+        </div>
+        <div class="ninot2">
+            <img src="./img/ninot2.png" alt="Recomendados">
+        </div>
+    </div>
+    
+     <div id="main-container">
+        <div class="subtitulo">
+        <h2 class="masvendidos">· Novedades ·</h2>
+    </div>
+        <div class="row" id="gamesnovContainer">
+    </div>
+    </div>
+ <div class="subtitulo">
+        <h2 class="masvendidos">· Lo mas Vendidos ·</h2>
+    </div>
     <div id="main-container">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="modal-container">
-                    <img src="./img/untamed.jpg" alt="Juego 1">
-                    <h2>Plenus</h2>
-                    <p class="price">€39.99</p>
-                    <button class="btn btn-primary btn-modal" data-toggle="modal" data-target="#gameModal1">Comprar</button>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="modal-container">
-                    <img src="./img/saquito.jpg" alt="Juego 2">
-                    <h2>Mi Saquito de huesos</h2>
-                    <p class="price">€19.99</p>
-                    <button class="btn btn-primary btn-modal" data-toggle="modal" data-target="#gameModal1">Comprar</button>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="modal-container">
-                    <img src="./img/monstrys.jpg" alt="Juego 3">
-                    <h2>Monstrys Roll & Paint</h2>
-                    <p class="price">€14.99</p>
-                    <button class="btn btn-primary btn-modal" data-toggle="modal" data-target="#gameModal1">Comprar</button>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="modal-container">
-                    <img src="./img/villanois.jpg" alt="Juego 4">
-                    <h2>Villanois Marvel</h2>
-                    <p class="price">€42.50</p>
-                    <button class="btn btn-primary btn-modal" data-toggle="modal" data-target="#gameModal1">Comprar</button>
-                </div>
-            </div>
-          
-        </div>
-    </div>  
-    <div id="main-container" class="container">
         <div class="row" id="gamesContainer">
-        </div>
+    </div>
     </div>
     <footer>
         <p>&copy; 2023 Tu Tienda de Juegos de Mesa</p>
