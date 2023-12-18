@@ -3,56 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./bootstrap-5.3.2-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./bootstrap-5.3.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/estilos.css">
     <script src="./bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
     <script src="./jQuery/jquery-3.7.1.min.js"></script>
     <script src="./js/cliente.js"></script>
-    <title>Estratego tu tienda de Juegos</title>
+    <title>Board Game Store</title>
 </head>
-<body>
-    <header class="container">
-        <div id="logoEstratego">
-            <img src="./img/logoEstratego.png" alt="logoEstratego" class="img-fluid">
-        </div>
-        <nav id="navegador">
-            <ul>
-                <li id="juegosLink"><a href="#">JUEGOS</a>
-                    <div id="categoriaDesplegable">
-                        <a href="#" class="categoria-option" data-categoria="niños">Juegos de Carta</a>
-                        <a href="#" class="categoria-option" data-categoria="adultos">Juegos de Mesa</a>
-                        <a href="#" class="categoria-option" data-categoria="todos">Juegos de Rol</a>
-                    </div>
-                </li>
-                <li id="accesoriosLink"><a href="#">ACCESORIOS</a></li>
-                <div id="categoriaDesplegable2">
-                    <a href="#" class="categoria-option" data-categoria="tapetes">Tapetes</a>
-                    <a href="#" class="categoria-option" data-categoria="fundas">Fundas</a>
-                    <a href="#" class="categoria-option" data-categoria="posters">Posters</a>
-                </div>
-                <li id="outletLink"><a href="#">OUTLET</a></li>
-                <div id="categoriaDesplegable3">
-                    <a href="#" class="categoria-option" data-categoria="descuentos">Descuentos</a>
-                    <a href="#" class="categoria-option" data-categoria="ultimasexistencias">Existencias</a>
-                </div>
-                <li class="search-bar">
+<header class="container">
+    <div id="logo" class="text-center col-3">
+        <img src="./img/logooo.png" alt="logo" class="img-fluid">
+    </div>
+    <nav id="navegador" class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="juegosLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">JUEGOS</a>
+                        <ul class="dropdown-menu" aria-labelledby="juegosLink">
+                            <li><a class="dropdown-item text-center" href="#" data-categoria="niños">Juegos de Carta</a></li>
+                            <li><a class="dropdown-item text-center" href="#" data-categoria="adultos">Juegos de Mesa</a></li>
+                            <li><a class="dropdown-item text-center" href="#" data-categoria="todos">Juegos de Rol</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="accesoriosLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">ACCESORIOS</a>
+                        <ul class="dropdown-menu" aria-labelledby="accesoriosLink">
+                            <li><a class="dropdown-item text-center" href="#" data-categoria="tapetes">Tapetes</a></li>
+                            <li><a class="dropdown-item text-center" href="#" data-categoria="fundas">Fundas</a></li>
+                            <li><a class="dropdown-item text-center" href="#" data-categoria="dados">Dados</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="outletLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">OUTLET</a>
+                        <ul class="dropdown-menu" aria-labelledby="outletLink">
+                            <li><a class="dropdown-item text-center" href="#" data-categoria="descuentos">Descuentos</a></li>
+                            <li><a class="dropdown-item text-center" href="#" data-categoria="ultimasexistencias">Existencias</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <li class="search-bar d-flex ml-auto">
                     <form action="#" method="GET">
                         <input type="text" name="search" placeholder="Buscar">
                         <button type="submit">Buscar</button>
                     </form>
                 </li>
-                <li class="icos"><a href="#"><img class="ico" src="./img/robot.png" alt="Icono Robot"></a></li>
-                <li class="icos"><a href="#"><img class="ico" id="ver-carrito" src="./img/carritoo.png" alt="Icono Carrito"></a></li>
-            </ul>
-        </nav>
-    </header>   
-        <div class="mensage-envio">
-            <h1>Devoluciones ampliadas hasta el 30 de enero - Envíos gratis desde 50 € a domicilio.</h1>
+                <div class="">    
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown" id="ic">
+                        <a class="nav-link dropdown-toggle" href="#" id="sesionLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img class="ico " src="./img/juego.png" alt="Icono mago">
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="sesionLink">
+                            <li><a class="dropdown-item text-center" href="#" data-categoria="iniciarsesion">Iniciar Sesión</a></li>
+                            <li><a class="dropdown-item text-center" href="#" data-categoria="nuevousuario">Registrarse</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="carritoLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img class="ico2" id="ver-carrito" src="./img/carritoo.png" alt="Icono Carrito">
+                        </a>
+                    </li>
+                </ul>
+                </div>
+            </div>
         </div>
-        <div class="listillo">
-            <img src="./img/image.png" alt=" listillo juego">
+    </nav>
+</header>
+<body> 
+    <div class="mensage-envio text-center">
+        <h5>Devoluciones ampliadas hasta el 30 de enero - Envíos gratis a domicilio en pedidos de más de 50 €.</h5>
+    </div>
+    <div class="container-carrusel">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/asmodee.jpg" class="d-block w-100" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/devir.jpg" class="d-block w-100" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/mercurio.jpg" class="d-block w-100" alt="Third slide">
+                </div>
+            </div>
         </div>
-    <div class="ninots">
+    </div>
+    <div class="container">
+        <div id="main-container">
+            <div class="subtitulo text-center">
+                <h2 class="masvendidos"> Novedades </h2>
+            </div>
+            <div class="row" id="gamesnovContainer">
+                <!-- Contenido de novedades -->
+            </div>
+        </div>
+    </div>
+    <div class="listillo text-center">
+        <img src="./img/image.png" alt=" listillo juego">
+    </div>
+    <div class="container">
+        <div id="main-container">
+            <div class="row" id="gamesContainer">
+                <div class="subtitulo text-center">
+                    <h2 class="masvendidos"> Lo mas Vendidos </h2>
+                </div>
+                <!-- Contenido de lo más vendido -->
+            </div>
+        </div>
+    </div>
+    <div class="ninots text-center">
         <div class="ninot1">
             <img src="./img/ninot1.png" alt="Lo mas nuevo">
         </div>
@@ -60,24 +123,15 @@
             <img src="./img/ninot2.png" alt="Recomendados">
         </div>
     </div>
-    
-    <div id="main-container">
-        <div class="subtitulo">
-        <h2 class="masvendidos">· Novedades ·</h2>
+</body> 
+<footer class="text-center">
+        <div class="pie row">
+            <div class="foot1 col-md-6 col-sm-6 col-6 text-center">
+                <img src="./img/logooo.png">
+            </div>
+            <div class="foot2 col-md-6 col-sm-6 col-6 text-center">
+                <img src="./img/lo.png">
+            </div>
         </div>
-        <div class="row" id="gamesnovContainer">
-    </div>
-</div>
- 
-    <div id="main-container">
-        <div class="row" id="gamesContainer">
-        <div class="subtitulo">
-        <h2 class="masvendidos">· Lo mas Vendidos ·</h2>
-    </div>
-    </div>
-    </div>
-    <footer>
-        <p>&copy; 2023 Tu Tienda de Juegos de Mesa</p>
     </footer>
-</body>
 </html>

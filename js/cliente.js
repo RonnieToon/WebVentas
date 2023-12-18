@@ -2,62 +2,6 @@ $(document).ready(init);
 
 function init() {
     cargarDatos();
-    
-    // Mostrar y ocultar el desplegable de JUEGOS
-    $('#juegosLink').on('click', function () {
-        $('#categoriaDesplegable').toggle();
-        $('#categoriaDesplegable2').hide();
-        $('#categoriaDesplegable3').hide();
-    });
-
-    // Manejar la selección de categoría para el desplegable de JUEGOS
-    $('#categoriaDesplegable .categoria-option').on('click', function() {
-        var categoriaSeleccionada = $(this).data('categoria');
-        console.log('Categoría seleccionada para Juegos:', categoriaSeleccionada);
-    });
-
-    // Mostrar y ocultar el desplegable de ACCESORIOS
-    $('#accesoriosLink').on('click', function () {
-        $('#categoriaDesplegable2').toggle();
-        $('#categoriaDesplegable').hide();
-        $('#categoriaDesplegable3').hide();
-    });
-
-    // Manejar la selección de categoría para el desplegable de ACCESORIOS
-    $('#categoriaDesplegable2 .categoria-option').on('click', function() {
-        var categoriaSeleccionada = $(this).data('categoria');
-        console.log('Categoría seleccionada para Accesorios:', categoriaSeleccionada);
-    });
-
-    // Mostrar y ocultar el desplegable de OUTLET
-    $('#outletLink').on('click', function () {
-        $('#categoriaDesplegable3').toggle();
-        $('#categoriaDesplegable').hide();
-        $('#categoriaDesplegable2').hide();
-    });
-
-    // Manejar la selección de categoría para el desplegable de OUTLET
-    $('#categoriaDesplegable3 .categoria-option').on('click', function() {
-        var categoriaSeleccionada = $(this).data('categoria');
-        console.log('Categoría seleccionada para Outlet:', categoriaSeleccionada);
-    });
-
-    // Ocultar el desplegable al hacer clic en cualquier lugar fuera de él
-    $(document).on('click', function (event) {
-        if (!$(event.target).closest('#juegosLink').length &&
-            !$(event.target).closest('#accesoriosLink').length &&
-            !$(event.target).closest('#outletLink').length) {
-            $('#categoriaDesplegable').hide();
-            $('#categoriaDesplegable2').hide();
-            $('#categoriaDesplegable3').hide();
-        }
-    });
-
-    // Evitar que el clic en los desplegables cierre el documento
-    $('#categoriaDesplegable, #categoriaDesplegable2, #categoriaDesplegable3').on('click', function (event) {
-        event.stopPropagation();
-    });
-}
 
 function cargarDatos() {
     $.ajax({
@@ -99,7 +43,7 @@ function mostrarJuegos(juegos, containerId) {
         var nuevoJuego = $('<div class="col-md-3">' +
             '<div class="modal-container">' +
             '<img src="' + juego.img + '" alt="' + juego.titulo + '">' +
-            '<h2>' + juego.titulo + '</h2>' +
+            '<h3>' + juego.titulo + '</h3>' +
             '<p class="price">' + juego.precio + '</p>' +
             '<button class="btn btn-primary btn-modal" data-toggle="modal" data-target="#gameModal1">Comprar</button>' +
             '</div>' +
@@ -167,4 +111,5 @@ function mostrarCarrusel(juegos, containerId) {
 
     // Añade carrusel al contenedor
     carruselContainer.append(carruselHTML);
+}
 }
